@@ -1,0 +1,67 @@
+********************************************************
+AUTHOR:   Christopher Millones & Jose Cardenas
+Lab #1:   Vectors
+CLASS:    CS1D
+TIME:     Mondays & Wednesday: 3:00 - 6:20PM
+DUE DATE:  1/17/18
+********************************************************
+
+a.	Write a program that uses a random number generator to generate 15 three-digit integers
+b.	Store the random numbers in a vector
+c.	Sort the random numbers
+d.	Reverse the digits of the random numbers
+e.	Store the reversed digits in another vector
+f.	Sum the digits of the random numbers
+g.	Store the sums in another vector
+h.	Print all three vectors
+
+a&b&c.)Store the random numbers in a vector & sort
+116
+138
+153
+200
+283
+320
+449
+672
+676
+735
+746
+753
+869
+914
+959
+
+d&e.)Reverse the digits of the random numberse.Store the reversed digits in another vector
+611
+831
+351
+002
+382
+023
+944
+276
+676
+537
+647
+357
+968
+419
+959
+
+f&g&h.) Sum the digits of the random numbers.Store the sums in another vector
+The sum of 116 is 8
+The sum of 138 is 12
+The sum of 153 is 9
+The sum of 200 is 2
+The sum of 283 is 13
+The sum of 320 is 5
+The sum of 449 is 17
+The sum of 672 is 15
+The sum of 676 is 19
+The sum of 735 is 15
+The sum of 746 is 17
+The sum of 753 is 15
+The sum of 869 is 23
+The sum of 914 is 14
+The sum of 959 is 23
