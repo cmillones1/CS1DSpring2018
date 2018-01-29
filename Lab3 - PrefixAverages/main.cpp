@@ -30,7 +30,6 @@ const void PRINTAUTHOR() {
 }
 
 const void INSTRUCTIONS() {
-
 	cout << left;
 	cout << "";
 }
@@ -38,18 +37,84 @@ vector<int> prefixAverages1(vector<int> X); //Quadratic
 vector<int> prefixAverages2(vector<int> X); //Linear
 int main()
 {
-	vector<int> prefixAvg; // Will hold the prefixaverages
-	clock_t start;
-	clock_t end;
+	vector<int> prefixAvg1; // Will hold the prefixaverages1
+	vector<int> prefixAvg2; // Will hold the prefixaverages2
+	int start;
+	int end;
 
-	for(int i = 1; i<= 100000; i++)
-		prefixAvg.push_back(i);
+	// n = 1000
+	for(int i = 1; i<= 10000; i++)
+	{
+		prefixAvg1.push_back(i);
+		prefixAvg2.push_back(i);
+	}
 
 	start = clock();
-	prefixAvg = prefixAverages1(prefixAvg);
-	end = clock() - start;
-	cout << start << "  " << end << endl;
-	cout << "It took " << (((double)(end - start)) /(CLOCKS_PER_SEC)*1000000);
+	prefixAvg1 = prefixAverages1(prefixAvg1);
+	end = clock();
+
+	cout << "\nn = 10000 -> Prefix Average1 time: " <<
+			(end-start)/double(CLOCKS_PER_SEC) << "ms";
+
+	start = clock();
+	prefixAvg2 = prefixAverages2(prefixAvg2);
+	end = clock();
+
+
+	cout << "\nn = 10000 -> Prefix Average2 time: "
+			<< (end-start)/double(CLOCKS_PER_SEC) << "ms";
+
+/******************************************************************************
+ * ****************************************************************************
+ ******************************************************************************/
+	// n = 10000
+	for(int i = 1; i<= 100000; i++)
+	{
+		prefixAvg1.push_back(i);
+		prefixAvg2.push_back(i);
+	}
+
+	start = clock();
+	prefixAvg1 = prefixAverages1(prefixAvg1);
+	end = clock();
+
+	cout << "\nn = 100000 -> Prefix Average1 time: " <<
+			(end-start)/double(CLOCKS_PER_SEC) << "ms";
+
+	start = clock();
+	prefixAvg2 = prefixAverages2(prefixAvg2);
+	end = clock();
+
+
+	cout << "\nn = 100000 -> Prefix Average2 time: "
+			<< (end-start)/double(CLOCKS_PER_SEC) << "ms";
+
+/******************************************************************************
+ * ****************************************************************************
+ ******************************************************************************/
+
+
+	// n = 100000
+	for(int i = 1; i<= 1000000; i++)
+	{
+		prefixAvg1.push_back(i);
+		prefixAvg2.push_back(i);
+	}
+
+	start = clock();
+	prefixAvg1 = prefixAverages1(prefixAvg1);
+	end = clock();
+
+	cout << "\nn = 1000000 -> Prefix Average1 time: "
+			<< (end-start)/double(CLOCKS_PER_SEC) << "ms";
+
+	start = clock();
+	prefixAvg2 = prefixAverages2(prefixAvg2);
+	end = clock();
+
+	cout << "\nn = 1000000 -> Prefix Average2 time: "
+			<< (end-start)/double(CLOCKS_PER_SEC) << "ms";
+
 
 
 	return 0;
@@ -80,55 +145,4 @@ vector<int> prefixAverages2(vector<int> X) // Linear
 	}
 	return A;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
