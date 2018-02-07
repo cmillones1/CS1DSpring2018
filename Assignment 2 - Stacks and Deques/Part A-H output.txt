@@ -1,0 +1,185 @@
+********************************************************
+AUTHOR:         Christopher Millones
+ASSIGNMENT #2:  Stacks and Deques
+CLASS:          CS1D
+TIME:           Mondays & Wednesday: 3:00 - 6:20PM
+DUE DATE:       2/7/2018
+********************************************************
+
+Given the following data:
+Input for the string stacks/queues/deques
+Mark, Alan, Rick, Eric, Jennifer, JoAnn, Bill
+Input for the double stacks/queues/deques
+44.44, 888.55, 88.88, 123.123, 8.445, 983.3
+	A.)Implement and print the stacks using the STL <stack> with the above data.
+	B.)Delete Rick and 88.8 from the above stacks (you will need to delete others)
+	   using the STL <stack> and print the remaining elements in the stacks.
+	C.)Implement and print the stacks using a singly linked list using the above data.
+	   Do not use the STL.
+	D.)Delete Rick and 88.8 from the above stacks (you will need to delete others)
+	   and print the remaining elements in the stacks. Do not use the STL.
+	E.)Implement and print the queues using either a circular array or a
+	   linked list using the above data.  Do not use the STL.
+	F.)Delete Rick and 88.8 from the above queues (you will need to delete others)
+	   and print the remaining elements in the queues. Do not use the STL.
+	G.)Implement and print the deques using a linked list using the above data.
+           Do not use the STL.
+	H.)Delete Rick and 88.8 from the above deques (you will need to delete others)
+	   and print the remaining elements in the deques. Do not use the STL.
+        I.)Implement the Parentheses Algorithm without using the STL).
+           Test your algorithm with the following mathematical statements.
+      E.C.)If valid, write software to evaluate the expressions assuming x = -1.
+
+
+	*******PART A*******
+-STACK OF NAMES-
+ELEMENT [1]: Bill
+ELEMENT [2]: JoAnn
+ELEMENT [3]: Jennifer
+ELEMENT [4]: Eric
+ELEMENT [5]: Rick
+ELEMENT [6]: Alan
+ELEMENT [7]: Mark
+
+-STACK OF DOUBLES-
+ELEMENT [1]: 983.3
+ELEMENT [2]: 8.445
+ELEMENT [3]: 123.123
+ELEMENT [4]: 88.88
+ELEMENT [5]: 888.55
+ELEMENT [6]: 44.44
+
+	*******PART B*******
+---POPPING FROM NAMES---
+POPPING: Bill
+POPPING: JoAnn
+POPPING: Jennifer
+POPPING: Eric
+POPPING: Rick
+---POPPING FROM DOUBLES---
+POPPING: 983.3
+POPPING: 8.445
+POPPING: 123.123
+POPPING: 88.88
+	-REMAINING STACK-
+-STACK OF NAMES-
+ELEMENT [1]: Alan
+ELEMENT [2]: Mark
+
+-STACK OF DOUBLES-
+ELEMENT [1]: 888.55
+ELEMENT [2]: 44.44
+
+	*******PART C*******
+-STACK OF NAMES-
+Element [1] Bill
+Element [2] JoAnn
+Element [3] Jennifer
+Element [4] Eric
+Element [5] Rick
+Element [6] Alan
+Element [7] Mark
+-STACK OF DOUBLES-
+Element [1] 983.3
+Element [2] 8.445
+Element [3] 123.123
+Element [4] 88.88
+Element [5] 888.55
+Element [6] 44.44
+
+	*******PART D*******
+---POPPING FROM NAMES---
+POPPING: Bill
+POPPING: JoAnn
+POPPING: Jennifer
+POPPING: Eric
+POPPING: Rick
+---POPPING FROM DOUBLES---
+POPPING: 983.3
+POPPING: 8.445
+POPPING: 123.123
+POPPING: 88.88
+	-REMAINING STACK-
+-STACK OF NAMES-
+Element [1] Alan
+Element [2] Mark
+
+-STACK OF DOUBLES-
+Element [1] 888.55
+Element [2] 44.44
+
+	*******PART E*******
+-QUEUE OF NAMES-
+Element [1] Mark
+Element [2] Alan
+Element [3] Rick
+Element [4] Eric
+Element [5] Jennifer
+Element [6] JoAnn
+Element [7] Bill
+-QUEUE OF DOUBLES-
+Element [1] 44.44
+Element [2] 888.55
+Element [3] 88.88
+Element [4] 123.123
+Element [5] 8.445
+Element [6] 983.3
+
+	*******PART F*******
+---POPPING FROM NAMES---
+POPPING: Mark
+POPPING: Alan
+POPPING: Rick
+---POPPING FROM DOUBLES---
+POPPING: 44.44
+POPPING: 888.55
+POPPING: 88.88
+	-REMAINING STACK-
+-STACK OF NAMES-
+Element [1] Eric
+Element [2] Jennifer
+Element [3] JoAnn
+Element [4] Bill
+
+-STACK OF DOUBLES-
+Element [1] 123.123
+Element [2] 8.445
+Element [3] 983.3
+
+	*******PART G*******
+-DEQUE OF NAMES-
+Element [1] Mark
+Element [2] Alan
+Element [3] Rick
+Element [4] Eric
+Element [5] Jennifer
+Element [6] JoAnn
+Element [7] Bill
+-DEQUE OF DOUBLES-
+Element [1] 44.44
+Element [2] 888.55
+Element [3] 88.88
+Element [4] 123.123
+Element [5] 8.445
+Element [6] 983.3
+
+	*******PART H*******
+---POPPING FROM NAMES---
+POPPING: Mark
+POPPING: Alan
+POPPING: Rick
+---POPPING FROM DOUBLES---
+POPPING: 44.44
+POPPING: 888.55
+POPPING: 88.88
+	-REMAINING STACK-
+-STACK OF NAMES-
+Element [1] Eric
+Element [2] Jennifer
+Element [3] JoAnn
+Element [4] Bill
+
+-STACK OF DOUBLES-
+Element [1] 123.123
+Element [2] 8.445
+Element [3] 983.3
