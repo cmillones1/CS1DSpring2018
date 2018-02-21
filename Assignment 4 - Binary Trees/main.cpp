@@ -45,11 +45,31 @@ const void INSTRUCTIONS() {
 			"in addition to the traversals, print out the binary search tree by level.\n\n";
 }
 
+const void BINARYTREE()
+{
+	cout << left;
+	cout << "\t\t";
+	cout << " 109\n";
+	cout << "                /   \\" << endl;
+	cout << "              55     1001"<< endl;
+	cout << "             / \\" << endl;
+	cout << "           28   88" << endl;
+	cout << "          /  \\" << endl;
+	cout << "         19    44" << endl;
+	cout << "        / \\   / \\" << endl;
+	cout << "       13  24 35  49"<<endl;
+	cout << "      / \\" << endl;
+	cout << "    12   18" << endl;
+	cout << "    /" << endl;
+	cout << "   7";
+}
+
 int main()
 {
 
 	PRINTAUTHOR();   //Brief summary abt author
 	INSTRUCTIONS();  //Prints the Assignment to be completed
+	BINARYTREE();
 
 
 	BST<int>* tree = new BST<int>;  //Create an Empty Tree.
@@ -74,7 +94,7 @@ int main()
 
 
 	//Prints the original binary tree with levels.
-	cout << "\t~BinarySearchTree~\n";
+	cout << "\n\t~BinarySearchTree~\n";
 	tree->PrintByLevel(tree->getRoot());
 
 	//prints the traversal of the binary tree( IN-ORDER)
