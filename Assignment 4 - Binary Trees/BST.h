@@ -94,6 +94,10 @@ BSTNode<E>* BST<E>::GetNewNode(int data)
 template <class E>
 BSTNode<E>* BST<E>::Insert(BSTNode<E>* root, int data)
 {
+	if(Search(root,data))
+	{
+		return root;
+	}
 	if(root == NULL)
 	{
 		root = GetNewNode(data);
@@ -329,19 +333,3 @@ void BST<E>::PrintByLevel(BSTNode<E>* root)
 
 }
 #endif /* BST_H_ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
